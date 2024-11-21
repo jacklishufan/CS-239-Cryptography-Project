@@ -29,7 +29,6 @@ HE_client.rotateKeyGen()
 
 # Generate and encrypt query vector
 x = np.random.rand(encoding_width)
-#cx = np.array([HE_client.encrypt(x[j]) for j in range(len(x))])
 # precompute 1 - |x|^2 for query vector
 du = 1 - x @ x
 cx = HE_client.encrypt(x)
@@ -54,9 +53,6 @@ print("="*40)
 
 def hyperbolic_distance_parts(u, v): # returns only the numerator and denominator of the hyperbolic distance formula
     diff = u - v
-    #du = -(1 - u @ u) # for some reason we need to negate this
-    #dv = -(1 - v @ v) # for some reason we need to negate this
-    #return diff @ diff, du * dv # returns the numerator and denominator
     return diff
 
 
@@ -74,7 +70,6 @@ HE_server.from_bytes_context(s_context)
 HE_server.from_bytes_public_key(s_public_key)
 HE_server.from_bytes_relin_key(s_relin_key)
 HE_server.from_bytes_rotate_key(s_rotate_key)
-#cx = np.array([PyCtxt(pyfhel=HE_server, bytestring=s_cx[j]) for j in range(len(s_cx))])
 cx = PyCtxt(pyfhel=HE_server, bytestring=s_cx)
 print(f"[Server] Received HE_server={HE_server} and cx={cx}")
 
@@ -82,10 +77,7 @@ print(f"[Server] Received HE_server={HE_server} and cx={cx}")
 res = []
 start = time.time()
 for i in range(len(D)):
-    #d = np.array(D[i])
-    #cd = np.array([HE_server.encrypt(d[j]) for j in range(len(d))])
     cd = HE_server.encrypt(D[i])
-    # Compute distance bewteen recieved query and D[i]
     res.append(hyperbolic_distance_parts(cx, cd))
 end = time.time()
 
@@ -106,21 +98,13 @@ def hyperbolic_distance(u, v):
     den = (1 - (u @ u)) * (1 - (v @ v))
     return np.arccosh(1 + 2 * (num / den))
 
-#res = np.array([HE_client.decrypt(c_res[j]) for j in range(len(c_res))])[:,0]
-#res = HE_client.decrypt(c_res)
-
 start = time.time()
 c_res = []
 for i in range(len(s_res)):
-    #c_num = PyCtxt(pyfhel=HE_server, bytestring=s_res[i])
     c_num = PyCtxt(pyfhel=HE_server, bytestring=s_res[i])
-    #c_den = PyCtxt(pyfhel=HE_server, bytestring=s_res[i][1])
     p_num = HE_client.decrypt(c_num)
-    #p_den = HE_client.decrypt(c_den)[0]
-    #dist = np.arccosh(1 + 2 * (p_num / p_den))
     # compute final score
     dist = np.arccosh(1 + 2 * (p_num @ p_num / (du * dv[i])))
-    #print(dist)
     c_res.append(dist)
 end = time.time()
 
@@ -129,7 +113,6 @@ print("="*40)
 
 # Checking result
 expected_res = [hyperbolic_distance(x, np.array(w)) for w in D]
-#print(f"[Client] Response received! \nResult is {c_res} \nShould be {expected}\nDiff {np.abs(np.array(c_res) - np.array(expected))}")
 for i in range(len(c_res)):
     result = c_res[i]
     expected = expected_res[i]
