@@ -57,7 +57,7 @@ def hyperbolic_distance_parts(u, v): # returns only the numerator and denominato
     #du = -(1 - u @ u) # for some reason we need to negate this
     #dv = -(1 - v @ v) # for some reason we need to negate this
     #return diff @ diff, du * dv # returns the numerator and denominator
-    return diff @ diff
+    return diff
 
 
 # document matrix containing rows of document encoding vectors
@@ -115,11 +115,11 @@ for i in range(len(s_res)):
     #c_num = PyCtxt(pyfhel=HE_server, bytestring=s_res[i])
     c_num = PyCtxt(pyfhel=HE_server, bytestring=s_res[i])
     #c_den = PyCtxt(pyfhel=HE_server, bytestring=s_res[i][1])
-    p_num = HE_client.decrypt(c_num)[0]
+    p_num = HE_client.decrypt(c_num)
     #p_den = HE_client.decrypt(c_den)[0]
     #dist = np.arccosh(1 + 2 * (p_num / p_den))
     # compute final score
-    dist = np.arccosh(1 + 2 * (p_num / (du * dv[i])))
+    dist = np.arccosh(1 + 2 * (p_num @ p_num / (du * dv[i])))
     #print(dist)
     c_res.append(dist)
 end = time.time()
