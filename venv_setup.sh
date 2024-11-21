@@ -3,4 +3,4 @@ mkdir ~/.venvs
 rm -rf ~/.venvs/cs239
 python3.9 -m venv ~/.venvs/cs239
 source ~/.venvs/cs239/bin/activate
-pip install ipykernel numpy pyfhel
+pip install numpy pyfhel
