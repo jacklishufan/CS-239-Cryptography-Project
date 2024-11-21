@@ -36,15 +36,19 @@ cx = HE_client.encrypt(x)
 
 # Serializing data and public context information
 
+start = time.time()
 s_context    = HE_client.to_bytes_context()
 s_public_key = HE_client.to_bytes_public_key()
 s_relin_key  = HE_client.to_bytes_relin_key()
 s_rotate_key = HE_client.to_bytes_rotate_key()
 #s_cx         = [cx[j].to_bytes() for j in range(len(cx))]
 s_cx         = cx.to_bytes()
+end = time.time()
 
 print(f"[Client] Sending HE_client={HE_client} and cx={cx}")
 print(f"[Client] Sent {(len(s_context) + len(s_public_key) + len(s_relin_key) + len(s_rotate_key) + len(s_cx)) / (10**6)} MB")
+print(f"[Client] Setup took {end - start}s")
+print("="*40)
 
 # Server Mock
 
@@ -72,7 +76,7 @@ HE_server.from_bytes_relin_key(s_relin_key)
 HE_server.from_bytes_rotate_key(s_rotate_key)
 #cx = np.array([PyCtxt(pyfhel=HE_server, bytestring=s_cx[j]) for j in range(len(s_cx))])
 cx = PyCtxt(pyfhel=HE_server, bytestring=s_cx)
-print(f"[Server] received HE_server={HE_server} and cx={cx}")
+print(f"[Server] Received HE_server={HE_server} and cx={cx}")
 
 # Encode each document weights in plaintext
 res = []
@@ -84,12 +88,14 @@ for i in range(len(D)):
     # Compute distance bewteen recieved query and D[i]
     res.append(hyperbolic_distance_parts(cx, cd))
 end = time.time()
-print(f"[Server] Compute took {end - start}s with bandwidth {len(D) / (end-start)} documents/s")
 
 s_res = [res[j].to_bytes() for j in range(len(res))]
 
 print(f"[Server] Distances computed! Responding: res={res[0]}...")
 print(f"[Server] Sent {(np.sum([len(s_res[i]) for i in range(len(s_res))])) / (10**6)} MB")
+
+print(f"[Server] Compute took {end - start}s with bandwidth {len(D) / (end-start)} documents/s")
+print("="*40)
 
 # Note that the time is mostly restricted by database size and not encoding size
 
@@ -102,6 +108,8 @@ def hyperbolic_distance(u, v):
 
 #res = np.array([HE_client.decrypt(c_res[j]) for j in range(len(c_res))])[:,0]
 #res = HE_client.decrypt(c_res)
+
+start = time.time()
 c_res = []
 for i in range(len(s_res)):
     #c_num = PyCtxt(pyfhel=HE_server, bytestring=s_res[i])
@@ -114,6 +122,10 @@ for i in range(len(s_res)):
     dist = np.arccosh(1 + 2 * (p_num / (du * dv[i])))
     #print(dist)
     c_res.append(dist)
+end = time.time()
+
+print(f"[Server] Compute took {end - start}s with bandwidth {len(s_res) / (end-start)} documents/s")
+print("="*40)
 
 # Checking result
 expected_res = [hyperbolic_distance(x, np.array(w)) for w in D]
