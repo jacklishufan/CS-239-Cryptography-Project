@@ -7,7 +7,7 @@ mkdir -p interm
 if [ ! -f ../corpus/medcorpus.csv ]; then
 	echo "Generating test corpus"
 	cd ../corpus
-	python3 generate_random_corpus.py -f medcorpus.csv -n 40960
+	python3 generate_random_corpus.py -f medcorpus.csv -n 100
 	cd ../protocol
 fi
 
