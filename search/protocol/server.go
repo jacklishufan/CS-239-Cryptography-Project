@@ -102,9 +102,26 @@ func (s *Server) GetHint(request bool, hint *TiptoeHint) error {
 	return nil
 }
 
+func Transpose(m *matrix.Matrix[matrix.Elem64]) *matrix.Matrix[matrix.Elem64] {
+	m_col := m.Cols()
+	m_row := m.Rows()
+	mT := matrix.New[matrix.Elem64](m_col, m_row)
+	for i := uint64(0); i < m_col; i++ {
+		for j := uint64(0); j < m_row; j++ {
+			val := m.Get(j, i)
+			mT.Set(i, j, val)
+		}
+	}
+	return mT
+}
+
 func (s *Server) GetEmbeddingsAnswer(query *pir.Query[matrix.Elem64],
-	ans *pir.Answer[matrix.Elem64]) error {
+	ans *pir.Answer[matrix.Elem64], ans2 *pir.Answer[matrix.Elem64]) error {
 	*ans = *s.embeddingsServer.Answer(query)
+	// this is not going to work yet because SimplePIR does not expose db
+	db := s.embeddingsServer.GetDB()
+	dbMatrix := db.Data
+	*ans2 = pir.Answer[matrix.Elem64]{Answer: matrix.Mul(dbMatrix, dbMatrix)}
 	return nil
 }
 
