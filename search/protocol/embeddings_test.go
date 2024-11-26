@@ -82,7 +82,7 @@ func testRecoverSingle(s *Server, corp *corpus.Corpus) {
 		var ans pir.Answer[matrix.Elem64]
 		var ans2 pir.Answer[matrix.Elem64]
 		s.GetEmbeddingsAnswer(query, &ans, &ans2)
-		logStats(c.NumDocs(), start, query, &ans)
+		logStatsHyperbolic(c.NumDocs(), start, query, &ans, &ans2)
 
 		dec := c.ReconstructEmbeddings(&ans, i)
 
@@ -120,7 +120,7 @@ func testRecoverCluster(s *Server, corp *corpus.Corpus) {
 		var ans pir.Answer[matrix.Elem64]
 		var ans2 pir.Answer[matrix.Elem64]
 		s.GetEmbeddingsAnswer(query, &ans, &ans2)
-		logStats(c.NumDocs(), start, query, &ans)
+		logStatsHyperbolic(c.NumDocs(), start, query, &ans, &ans2)
 
 		dec := c.ReconstructEmbeddingsWithinCluster(&ans, i)
 		checkAnswers(dec, uint(i), p, emb, corp)
