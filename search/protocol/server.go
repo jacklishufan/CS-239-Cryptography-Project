@@ -121,7 +121,7 @@ func (s *Server) GetEmbeddingsAnswer(query *pir.Query[matrix.Elem64],
 	// this is not going to work yet because SimplePIR does not expose db
 	db := s.embeddingsServer.GetDB()
 	dbMatrix := db.Data
-	*ans2 = pir.Answer[matrix.Elem64]{Answer: matrix.Mul(dbMatrix, dbMatrix)}
+	*ans2 = pir.Answer[matrix.Elem64]{Answer: matrix.Mul(Transpose(dbMatrix), dbMatrix)}
 	return nil
 }
 
