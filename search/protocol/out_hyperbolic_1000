@@ -1663,5 +1663,3 @@ length is 1000 by 1 (1000)
 	Answered query to 1000-document corpus in: 917.166µs
 	Upload: 0.01 MB
 	Download: 0.01 MB
-signal: interrupt
-FAIL	github.com/ahenzinger/tiptoe/search/protocol	893.330s

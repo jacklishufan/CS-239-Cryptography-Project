@@ -1,386 +1,551 @@
 TCP server listening on 10.0.2.16:1235
 TCP server listening on 10.0.2.16:1234
 TLS server listening on 10.0.2.16:1237
-Preprocessing a corpus of 100 embeddings of length 192
-  Building db with 100 embeddings
+Preprocessing a corpus of 1000 embeddings of length 768
+  Building db with 1000 embeddings
 The longest row has length 1 -- max capacity is 3125
-DB size is 19200 -- best possible would be 19200
-2024/11/26 23:46:51 Total packed db size is ~0.038910 MB
-DB dimensions: 100 by 192
+DB size is 768000 -- best possible would be 768000
+2024/12/01 21:40:37 Total packed db size is ~1.556396 MB
+DB dimensions: 1000 by 768
     done
 Setting up coordinator
   0. Gathering hints
-Running embedding queries (over 100-doc fake corpus)
-	Embeddings client: M = 192; L = 100; p = 131072; n = 2048
-		Embeddings hint: 1.76 MB
-		Embeddings map: 0.00 MB
-	Total metadata: 1.76 MB
-	Preprocessed query to 100-document corpus in: 2.081039966s
+Running embedding queries (over 1000-doc fake corpus)
+	Embeddings client: M = 768; L = 1000; p = 131072; n = 2048
+		Embeddings hint: 17.57 MB
+		Embeddings map: 0.01 MB
+	Total metadata: 17.58 MB
+	Preprocessed query to 1000-document corpus in: 2.079729112s
 	Upload: 32.38 MB
 	Download: 0.25 MB
-	Answered query to 100-document corpus in: 15.88µs
-	Upload: 0.00 MB
-	Download: 0.00 MB
-	Preprocessed query to 100-document corpus in: 1.994141255s
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 911.677µs
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Preprocessed query to 1000-document corpus in: 2.054163806s
 	Upload: 32.38 MB
 	Download: 0.25 MB
-	Answered query to 100-document corpus in: 18.28µs
-	Upload: 0.00 MB
-	Download: 0.00 MB
-	Preprocessed query to 100-document corpus in: 2.006990567s
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 864.546µs
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Preprocessed query to 1000-document corpus in: 2.034679915s
 	Upload: 32.38 MB
 	Download: 0.25 MB
-	Answered query to 100-document corpus in: 18.75µs
-	Upload: 0.00 MB
-	Download: 0.00 MB
-	Preprocessed query to 100-document corpus in: 2.002059952s
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 1.32389ms
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Preprocessed query to 1000-document corpus in: 2.091266126s
 	Upload: 32.38 MB
 	Download: 0.25 MB
-	Answered query to 100-document corpus in: 16.29µs
-	Upload: 0.00 MB
-	Download: 0.00 MB
-	Preprocessed query to 100-document corpus in: 2.004719321s
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 928.926µs
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Preprocessed query to 1000-document corpus in: 2.005111691s
 	Upload: 32.38 MB
 	Download: 0.25 MB
-	Answered query to 100-document corpus in: 16.201µs
-	Upload: 0.00 MB
-	Download: 0.00 MB
-	Preprocessed query to 100-document corpus in: 2.002258534s
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 1.011677ms
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Preprocessed query to 1000-document corpus in: 2.006083528s
 	Upload: 32.38 MB
 	Download: 0.25 MB
-	Answered query to 100-document corpus in: 16.98µs
-	Upload: 0.00 MB
-	Download: 0.00 MB
-	Preprocessed query to 100-document corpus in: 2.035702282s
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 896.826µs
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Preprocessed query to 1000-document corpus in: 2.023922457s
 	Upload: 32.38 MB
 	Download: 0.25 MB
-	Answered query to 100-document corpus in: 17.54µs
-	Upload: 0.00 MB
-	Download: 0.00 MB
-	Preprocessed query to 100-document corpus in: 2.032274138s
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 947.177µs
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Preprocessed query to 1000-document corpus in: 2.008552326s
 	Upload: 32.38 MB
 	Download: 0.25 MB
-	Answered query to 100-document corpus in: 20.84µs
-	Upload: 0.00 MB
-	Download: 0.00 MB
-	Preprocessed query to 100-document corpus in: 1.997332468s
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 943.887µs
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Preprocessed query to 1000-document corpus in: 1.980085189s
 	Upload: 32.38 MB
 	Download: 0.25 MB
-	Answered query to 100-document corpus in: 18.76µs
-	Upload: 0.00 MB
-	Download: 0.00 MB
-	Preprocessed query to 100-document corpus in: 2.016089732s
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 907.877µs
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Preprocessed query to 1000-document corpus in: 2.049582063s
 	Upload: 32.38 MB
 	Download: 0.25 MB
-	Answered query to 100-document corpus in: 18.48µs
-	Upload: 0.00 MB
-	Download: 0.00 MB
-	Preprocessed query to 100-document corpus in: 2.057271597s
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 917.766µs
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Preprocessed query to 1000-document corpus in: 2.021116627s
 	Upload: 32.38 MB
 	Download: 0.25 MB
-	Answered query to 100-document corpus in: 16.82µs
-	Upload: 0.00 MB
-	Download: 0.00 MB
-	Preprocessed query to 100-document corpus in: 2.01719734s
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 1.102768ms
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Preprocessed query to 1000-document corpus in: 2.024086108s
 	Upload: 32.38 MB
 	Download: 0.25 MB
-	Answered query to 100-document corpus in: 19.07µs
-	Upload: 0.00 MB
-	Download: 0.00 MB
-	Preprocessed query to 100-document corpus in: 1.971696665s
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 996.597µs
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Preprocessed query to 1000-document corpus in: 2.011524947s
 	Upload: 32.38 MB
 	Download: 0.25 MB
-	Answered query to 100-document corpus in: 17.75µs
-	Upload: 0.00 MB
-	Download: 0.00 MB
-	Preprocessed query to 100-document corpus in: 1.999364293s
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 1.009837ms
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Preprocessed query to 1000-document corpus in: 1.98563692s
 	Upload: 32.38 MB
 	Download: 0.25 MB
-	Answered query to 100-document corpus in: 16.95µs
-	Upload: 0.00 MB
-	Download: 0.00 MB
-	Preprocessed query to 100-document corpus in: 2.00599358s
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 1.347129ms
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Preprocessed query to 1000-document corpus in: 2.046149098s
 	Upload: 32.38 MB
 	Download: 0.25 MB
-	Answered query to 100-document corpus in: 17.14µs
-	Upload: 0.00 MB
-	Download: 0.00 MB
-	Preprocessed query to 100-document corpus in: 2.005840289s
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 964.127µs
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Preprocessed query to 1000-document corpus in: 2.019853018s
 	Upload: 32.38 MB
 	Download: 0.25 MB
-	Answered query to 100-document corpus in: 18.46µs
-	Upload: 0.00 MB
-	Download: 0.00 MB
-	Preprocessed query to 100-document corpus in: 2.019151394s
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 1.183069ms
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Preprocessed query to 1000-document corpus in: 2.007565918s
 	Upload: 32.38 MB
 	Download: 0.25 MB
-	Answered query to 100-document corpus in: 13.47µs
-	Upload: 0.00 MB
-	Download: 0.00 MB
-	Preprocessed query to 100-document corpus in: 2.009922319s
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 845.596µs
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Preprocessed query to 1000-document corpus in: 2.019863648s
 	Upload: 32.38 MB
 	Download: 0.25 MB
-	Answered query to 100-document corpus in: 18.15µs
-	Upload: 0.00 MB
-	Download: 0.00 MB
-	Preprocessed query to 100-document corpus in: 1.997738641s
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 1.33241ms
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Preprocessed query to 1000-document corpus in: 1.991709194s
 	Upload: 32.38 MB
 	Download: 0.25 MB
-	Answered query to 100-document corpus in: 18.52µs
-	Upload: 0.00 MB
-	Download: 0.00 MB
-	Preprocessed query to 100-document corpus in: 1.979686152s
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 891.586µs
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Preprocessed query to 1000-document corpus in: 2.018537928s
 	Upload: 32.38 MB
 	Download: 0.25 MB
-	Answered query to 100-document corpus in: 18.77µs
-	Upload: 0.00 MB
-	Download: 0.00 MB
-	Embeddings client: M = 192; L = 100; p = 131072; n = 2048
-		Embeddings hint: 1.76 MB
-		Embeddings map: 0.00 MB
-	Total metadata: 1.76 MB
-	Preprocessed query to 100-document corpus in: 2.042854234s
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 1.008678ms
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Embeddings client: M = 768; L = 1000; p = 131072; n = 2048
+		Embeddings hint: 17.57 MB
+		Embeddings map: 0.01 MB
+	Total metadata: 17.58 MB
+	Preprocessed query to 1000-document corpus in: 2.057906754s
 	Upload: 32.38 MB
 	Download: 0.25 MB
-	Answered query to 100-document corpus in: 26.49µs
-	Upload: 0.00 MB
-	Download: 0.00 MB
-	Preprocessed query to 100-document corpus in: 2.07022669s
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 956.637µs
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Preprocessed query to 1000-document corpus in: 2.090605081s
 	Upload: 32.38 MB
 	Download: 0.25 MB
-	Answered query to 100-document corpus in: 27.87µs
-	Upload: 0.00 MB
-	Download: 0.00 MB
-	Preprocessed query to 100-document corpus in: 2.026388916s
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 1.036547ms
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Preprocessed query to 1000-document corpus in: 1.988639061s
 	Upload: 32.38 MB
 	Download: 0.25 MB
-	Answered query to 100-document corpus in: 22.53µs
-	Upload: 0.00 MB
-	Download: 0.00 MB
-	Preprocessed query to 100-document corpus in: 2.061235545s
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 922.987µs
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Preprocessed query to 1000-document corpus in: 2.030821768s
 	Upload: 32.38 MB
 	Download: 0.25 MB
-	Answered query to 100-document corpus in: 18.5µs
-	Upload: 0.00 MB
-	Download: 0.00 MB
-	Preprocessed query to 100-document corpus in: 2.013317492s
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 1.38029ms
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Preprocessed query to 1000-document corpus in: 2.075791513s
 	Upload: 32.38 MB
 	Download: 0.25 MB
-	Answered query to 100-document corpus in: 17.68µs
-	Upload: 0.00 MB
-	Download: 0.00 MB
-	Preprocessed query to 100-document corpus in: 2.054612968s
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 1.057058ms
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Preprocessed query to 1000-document corpus in: 2.109298706s
 	Upload: 32.38 MB
 	Download: 0.25 MB
-	Answered query to 100-document corpus in: 16.21µs
-	Upload: 0.00 MB
-	Download: 0.00 MB
-	Preprocessed query to 100-document corpus in: 2.076287402s
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 1.012298ms
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Preprocessed query to 1000-document corpus in: 2.037111623s
 	Upload: 32.38 MB
 	Download: 0.25 MB
-	Answered query to 100-document corpus in: 18.15µs
-	Upload: 0.00 MB
-	Download: 0.00 MB
-	Preprocessed query to 100-document corpus in: 2.023689367s
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 1.014967ms
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Preprocessed query to 1000-document corpus in: 2.124100954s
 	Upload: 32.38 MB
 	Download: 0.25 MB
-	Answered query to 100-document corpus in: 19.6µs
-	Upload: 0.00 MB
-	Download: 0.00 MB
-	Preprocessed query to 100-document corpus in: 2.037399765s
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 942.687µs
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Preprocessed query to 1000-document corpus in: 2.002024929s
 	Upload: 32.38 MB
 	Download: 0.25 MB
-	Answered query to 100-document corpus in: 18.39µs
-	Upload: 0.00 MB
-	Download: 0.00 MB
-	Preprocessed query to 100-document corpus in: 2.137191678s
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 1.090738ms
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Preprocessed query to 1000-document corpus in: 2.094067866s
 	Upload: 32.38 MB
 	Download: 0.25 MB
-	Answered query to 100-document corpus in: 18.09µs
-	Upload: 0.00 MB
-	Download: 0.00 MB
-	Preprocessed query to 100-document corpus in: 2.010753084s
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 446.894µs
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Preprocessed query to 1000-document corpus in: 2.118692064s
 	Upload: 32.38 MB
 	Download: 0.25 MB
-	Answered query to 100-document corpus in: 18.24µs
-	Upload: 0.00 MB
-	Download: 0.00 MB
-	Preprocessed query to 100-document corpus in: 2.027115261s
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 923.746µs
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Preprocessed query to 1000-document corpus in: 2.029938261s
 	Upload: 32.38 MB
 	Download: 0.25 MB
-	Answered query to 100-document corpus in: 16.52µs
-	Upload: 0.00 MB
-	Download: 0.00 MB
-	Preprocessed query to 100-document corpus in: 2.094926946s
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 1.041658ms
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Preprocessed query to 1000-document corpus in: 2.05739906s
 	Upload: 32.38 MB
 	Download: 0.25 MB
-	Answered query to 100-document corpus in: 15.97µs
-	Upload: 0.00 MB
-	Download: 0.00 MB
-	Preprocessed query to 100-document corpus in: 2.04937916s
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 1.033617ms
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Preprocessed query to 1000-document corpus in: 1.997491616s
 	Upload: 32.38 MB
 	Download: 0.25 MB
-	Answered query to 100-document corpus in: 19.56µs
-	Upload: 0.00 MB
-	Download: 0.00 MB
-	Preprocessed query to 100-document corpus in: 2.050263957s
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 952.307µs
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Preprocessed query to 1000-document corpus in: 2.060490793s
 	Upload: 32.38 MB
 	Download: 0.25 MB
-	Answered query to 100-document corpus in: 16.6µs
-	Upload: 0.00 MB
-	Download: 0.00 MB
-	Preprocessed query to 100-document corpus in: 2.084149799s
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 872.637µs
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Preprocessed query to 1000-document corpus in: 2.035278859s
 	Upload: 32.38 MB
 	Download: 0.25 MB
-	Answered query to 100-document corpus in: 17.89µs
-	Upload: 0.00 MB
-	Download: 0.00 MB
-	Preprocessed query to 100-document corpus in: 2.107516836s
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 1.032057ms
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Preprocessed query to 1000-document corpus in: 2.076496079s
 	Upload: 32.38 MB
 	Download: 0.25 MB
-	Answered query to 100-document corpus in: 15.73µs
-	Upload: 0.00 MB
-	Download: 0.00 MB
-	Preprocessed query to 100-document corpus in: 2.059735845s
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 927.746µs
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Preprocessed query to 1000-document corpus in: 2.078813216s
 	Upload: 32.38 MB
 	Download: 0.25 MB
-	Answered query to 100-document corpus in: 17.85µs
-	Upload: 0.00 MB
-	Download: 0.00 MB
-	Preprocessed query to 100-document corpus in: 2.047103073s
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 961.827µs
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Preprocessed query to 1000-document corpus in: 2.005969088s
 	Upload: 32.38 MB
 	Download: 0.25 MB
-	Answered query to 100-document corpus in: 18.55µs
-	Upload: 0.00 MB
-	Download: 0.00 MB
-	Preprocessed query to 100-document corpus in: 2.084499991s
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 980.587µs
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Preprocessed query to 1000-document corpus in: 2.088421486s
 	Upload: 32.38 MB
 	Download: 0.25 MB
-	Answered query to 100-document corpus in: 18.051µs
-	Upload: 0.00 MB
-	Download: 0.00 MB
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 998.578µs
+	Upload: 0.01 MB
+	Download: 0.01 MB
 Dumping server state to file
-	Embeddings client: M = 192; L = 100; p = 131072; n = 2048
-		Embeddings hint: 1.76 MB
-		Embeddings map: 0.00 MB
-	Total metadata: 1.76 MB
-	Preprocessed query to 100-document corpus in: 2.044597536s
+	Embeddings client: M = 768; L = 1000; p = 131072; n = 2048
+		Embeddings hint: 17.57 MB
+		Embeddings map: 0.01 MB
+	Total metadata: 17.58 MB
+	Preprocessed query to 1000-document corpus in: 2.022212224s
 	Upload: 32.38 MB
 	Download: 0.25 MB
-	Answered query to 100-document corpus in: 20.85µs
-	Upload: 0.00 MB
-	Download: 0.00 MB
-	Preprocessed query to 100-document corpus in: 2.033720638s
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 990.907µs
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Preprocessed query to 1000-document corpus in: 2.071820675s
 	Upload: 32.38 MB
 	Download: 0.25 MB
-	Answered query to 100-document corpus in: 22.621µs
-	Upload: 0.00 MB
-	Download: 0.00 MB
-	Preprocessed query to 100-document corpus in: 2.099194367s
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 1.029368ms
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Preprocessed query to 1000-document corpus in: 2.144642763s
 	Upload: 32.38 MB
 	Download: 0.25 MB
-	Answered query to 100-document corpus in: 19.09µs
-	Upload: 0.00 MB
-	Download: 0.00 MB
-	Preprocessed query to 100-document corpus in: 2.061622568s
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 931.397µs
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Preprocessed query to 1000-document corpus in: 2.143687756s
 	Upload: 32.38 MB
 	Download: 0.25 MB
-	Answered query to 100-document corpus in: 57.78µs
-	Upload: 0.00 MB
-	Download: 0.00 MB
-	Preprocessed query to 100-document corpus in: 2.097273663s
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 931.397µs
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Preprocessed query to 1000-document corpus in: 2.075596923s
 	Upload: 32.38 MB
 	Download: 0.25 MB
-	Answered query to 100-document corpus in: 18.37µs
-	Upload: 0.00 MB
-	Download: 0.00 MB
-	Preprocessed query to 100-document corpus in: 2.092135385s
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 947.527µs
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Preprocessed query to 1000-document corpus in: 2.110481905s
 	Upload: 32.38 MB
 	Download: 0.25 MB
-	Answered query to 100-document corpus in: 15.62µs
-	Upload: 0.00 MB
-	Download: 0.00 MB
-	Preprocessed query to 100-document corpus in: 2.06474644s
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 925.287µs
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Preprocessed query to 1000-document corpus in: 2.049326171s
 	Upload: 32.38 MB
 	Download: 0.25 MB
-	Answered query to 100-document corpus in: 16.86µs
-	Upload: 0.00 MB
-	Download: 0.00 MB
-	Preprocessed query to 100-document corpus in: 2.054104114s
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 925.397µs
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Preprocessed query to 1000-document corpus in: 2.120535678s
 	Upload: 32.38 MB
 	Download: 0.25 MB
-	Answered query to 100-document corpus in: 20.96µs
-	Upload: 0.00 MB
-	Download: 0.00 MB
-	Preprocessed query to 100-document corpus in: 2.03962658s
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 974.807µs
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Preprocessed query to 1000-document corpus in: 2.134909902s
 	Upload: 32.38 MB
 	Download: 0.25 MB
-	Answered query to 100-document corpus in: 19.5µs
-	Upload: 0.00 MB
-	Download: 0.00 MB
-	Preprocessed query to 100-document corpus in: 2.038115529s
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 474.033µs
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Preprocessed query to 1000-document corpus in: 2.107578294s
 	Upload: 32.38 MB
 	Download: 0.25 MB
-	Answered query to 100-document corpus in: 17.731µs
-	Upload: 0.00 MB
-	Download: 0.00 MB
-	Preprocessed query to 100-document corpus in: 2.003445873s
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 842.366µs
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Preprocessed query to 1000-document corpus in: 2.121753336s
 	Upload: 32.38 MB
 	Download: 0.25 MB
-	Answered query to 100-document corpus in: 15.48µs
-	Upload: 0.00 MB
-	Download: 0.00 MB
-	Preprocessed query to 100-document corpus in: 2.069883297s
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 903.256µs
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Preprocessed query to 1000-document corpus in: 2.125665325s
 	Upload: 32.38 MB
 	Download: 0.25 MB
-	Answered query to 100-document corpus in: 16.94µs
-	Upload: 0.00 MB
-	Download: 0.00 MB
-	Preprocessed query to 100-document corpus in: 2.083385813s
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 838.916µs
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Preprocessed query to 1000-document corpus in: 1.990445214s
 	Upload: 32.38 MB
 	Download: 0.25 MB
-	Answered query to 100-document corpus in: 16.76µs
-	Upload: 0.00 MB
-	Download: 0.00 MB
-	Preprocessed query to 100-document corpus in: 2.024905585s
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 952.107µs
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Preprocessed query to 1000-document corpus in: 2.153493317s
 	Upload: 32.38 MB
 	Download: 0.25 MB
-	Answered query to 100-document corpus in: 17.901µs
-	Upload: 0.00 MB
-	Download: 0.00 MB
-	Preprocessed query to 100-document corpus in: 2.062939997s
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 390.122µs
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Preprocessed query to 1000-document corpus in: 2.046541751s
 	Upload: 32.38 MB
 	Download: 0.25 MB
-	Answered query to 100-document corpus in: 17.561µs
-	Upload: 0.00 MB
-	Download: 0.00 MB
-	Preprocessed query to 100-document corpus in: 2.111452645s
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 1.462391ms
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Preprocessed query to 1000-document corpus in: 2.157352526s
 	Upload: 32.38 MB
 	Download: 0.25 MB
-	Answered query to 100-document corpus in: 17.68µs
-	Upload: 0.00 MB
-	Download: 0.00 MB
-	Preprocessed query to 100-document corpus in: 2.102146087s
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 1.070108ms
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Preprocessed query to 1000-document corpus in: 2.096317093s
 	Upload: 32.38 MB
 	Download: 0.25 MB
-	Answered query to 100-document corpus in: 14.79µs
-	Upload: 0.00 MB
-	Download: 0.00 MB
-	Preprocessed query to 100-document corpus in: 2.101735004s
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 916.387µs
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Preprocessed query to 1000-document corpus in: 2.061797862s
 	Upload: 32.38 MB
 	Download: 0.25 MB
-	Answered query to 100-document corpus in: 15.35µs
-	Upload: 0.00 MB
-	Download: 0.00 MB
-	Preprocessed query to 100-document corpus in: 2.087672964s
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 1.40629ms
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Preprocessed query to 1000-document corpus in: 2.03953223s
 	Upload: 32.38 MB
 	Download: 0.25 MB
-	Answered query to 100-document corpus in: 18.08µs
-	Upload: 0.00 MB
-	Download: 0.00 MB
-	Preprocessed query to 100-document corpus in: 2.030910598s
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 962.398µs
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Preprocessed query to 1000-document corpus in: 2.107206841s
 	Upload: 32.38 MB
 	Download: 0.25 MB
-	Answered query to 100-document corpus in: 31.101µs
-	Upload: 0.00 MB
-	Download: 0.00 MB
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 1.045627ms
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Embeddings client: M = 768; L = 1000; p = 131072; n = 2048
+		Embeddings hint: 17.57 MB
+		Embeddings map: 0.01 MB
+	Total metadata: 17.58 MB
+	Preprocessed query to 1000-document corpus in: 2.110882138s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 4.933726ms
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Preprocessed query to 1000-document corpus in: 2.018337027s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 3.653706ms
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Preprocessed query to 1000-document corpus in: 2.018189166s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 4.644314ms
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Preprocessed query to 1000-document corpus in: 2.090155338s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 4.12664ms
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Preprocessed query to 1000-document corpus in: 2.086010697s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 5.182728ms
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Preprocessed query to 1000-document corpus in: 2.028113378s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 4.830174ms
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Preprocessed query to 1000-document corpus in: 2.082757994s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 3.508506ms
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Preprocessed query to 1000-document corpus in: 2.08626922s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 4.931517ms
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Preprocessed query to 1000-document corpus in: 2.085403194s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 4.818765ms
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Preprocessed query to 1000-document corpus in: 2.088889268s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 4.344851ms
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Preprocessed query to 1000-document corpus in: 2.027182222s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 5.098436ms
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Preprocessed query to 1000-document corpus in: 2.115074328s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 4.568563ms
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Preprocessed query to 1000-document corpus in: 2.044472117s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 2.673779ms
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Preprocessed query to 1000-document corpus in: 2.017609141s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+length is 1000 by 1 (1000)
+	Answered query to 1000-document corpus in: 3.578456ms
+	Upload: 0.01 MB
+	Download: 0.01 MB
+	Preprocessed query to 1000-document corpus in: 2.035680432s
+	Upload: 32.38 MB
+	Download: 0.25 MB
