@@ -1,0 +1,421 @@
+TCP server listening on 10.0.2.16:1234
+TCP server listening on 10.0.2.16:1235
+TLS server listening on 10.0.2.16:1237
+Preprocessing a corpus of 100 embeddings of length 192
+  Building db with 100 embeddings
+The longest row has length 1 -- max capacity is 3125
+DB size is 19200 -- best possible would be 19200
+2024/12/01 01:35:53 Total packed db size is ~0.038910 MB
+DB dimensions: 100 by 192
+    done
+Setting up coordinator
+  0. Gathering hints
+Running embedding queries (over 100-doc fake corpus)
+	Embeddings client: M = 192; L = 100; p = 131072; n = 2048
+		Embeddings hint: 1.76 MB
+		Embeddings map: 0.00 MB
+	Total metadata: 1.76 MB
+	Preprocessed query to 100-document corpus in: 2.093459009s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+	Answered query to 100-document corpus in: 225.502µs
+	Upload: 0.00 MB
+	Download: 0.04 MB
+	Preprocessed query to 100-document corpus in: 2.022319343s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+	Answered query to 100-document corpus in: 188.021µs
+	Upload: 0.00 MB
+	Download: 0.04 MB
+	Preprocessed query to 100-document corpus in: 2.001497015s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+	Answered query to 100-document corpus in: 202.421µs
+	Upload: 0.00 MB
+	Download: 0.04 MB
+	Preprocessed query to 100-document corpus in: 2.022359812s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+	Answered query to 100-document corpus in: 186.371µs
+	Upload: 0.00 MB
+	Download: 0.04 MB
+	Preprocessed query to 100-document corpus in: 2.02473409s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+	Answered query to 100-document corpus in: 230.702µs
+	Upload: 0.00 MB
+	Download: 0.04 MB
+	Preprocessed query to 100-document corpus in: 2.014631618s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+	Answered query to 100-document corpus in: 234.021µs
+	Upload: 0.00 MB
+	Download: 0.04 MB
+	Preprocessed query to 100-document corpus in: 1.995026659s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+	Answered query to 100-document corpus in: 169.551µs
+	Upload: 0.00 MB
+	Download: 0.04 MB
+	Preprocessed query to 100-document corpus in: 2.028094113s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+	Answered query to 100-document corpus in: 213.351µs
+	Upload: 0.00 MB
+	Download: 0.04 MB
+	Preprocessed query to 100-document corpus in: 1.992393459s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+	Answered query to 100-document corpus in: 222.772µs
+	Upload: 0.00 MB
+	Download: 0.04 MB
+	Preprocessed query to 100-document corpus in: 2.071858495s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+	Answered query to 100-document corpus in: 201.262µs
+	Upload: 0.00 MB
+	Download: 0.04 MB
+	Preprocessed query to 100-document corpus in: 2.071904996s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+	Answered query to 100-document corpus in: 244.141µs
+	Upload: 0.00 MB
+	Download: 0.04 MB
+	Preprocessed query to 100-document corpus in: 2.01628583s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+	Answered query to 100-document corpus in: 197.652µs
+	Upload: 0.00 MB
+	Download: 0.04 MB
+	Preprocessed query to 100-document corpus in: 1.958816701s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+	Answered query to 100-document corpus in: 174.901µs
+	Upload: 0.00 MB
+	Download: 0.04 MB
+	Preprocessed query to 100-document corpus in: 2.034844262s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+	Answered query to 100-document corpus in: 207.792µs
+	Upload: 0.00 MB
+	Download: 0.04 MB
+	Preprocessed query to 100-document corpus in: 1.993948841s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+	Answered query to 100-document corpus in: 192.511µs
+	Upload: 0.00 MB
+	Download: 0.04 MB
+	Preprocessed query to 100-document corpus in: 2.014684629s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+	Answered query to 100-document corpus in: 167.151µs
+	Upload: 0.00 MB
+	Download: 0.04 MB
+	Preprocessed query to 100-document corpus in: 2.010598509s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+	Answered query to 100-document corpus in: 164.372µs
+	Upload: 0.00 MB
+	Download: 0.04 MB
+	Preprocessed query to 100-document corpus in: 2.042847258s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+	Answered query to 100-document corpus in: 165.411µs
+	Upload: 0.00 MB
+	Download: 0.04 MB
+	Preprocessed query to 100-document corpus in: 1.978638302s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+	Answered query to 100-document corpus in: 255.151µs
+	Upload: 0.00 MB
+	Download: 0.04 MB
+	Preprocessed query to 100-document corpus in: 2.002784914s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+	Answered query to 100-document corpus in: 208.041µs
+	Upload: 0.00 MB
+	Download: 0.04 MB
+	Embeddings client: M = 192; L = 100; p = 131072; n = 2048
+		Embeddings hint: 1.76 MB
+		Embeddings map: 0.00 MB
+	Total metadata: 1.76 MB
+	Preprocessed query to 100-document corpus in: 2.207105687s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+	Answered query to 100-document corpus in: 180.521µs
+	Upload: 0.00 MB
+	Download: 0.04 MB
+	Preprocessed query to 100-document corpus in: 2.009202459s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+	Answered query to 100-document corpus in: 340.543µs
+	Upload: 0.00 MB
+	Download: 0.04 MB
+	Preprocessed query to 100-document corpus in: 2.092157529s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+	Answered query to 100-document corpus in: 217.291µs
+	Upload: 0.00 MB
+	Download: 0.04 MB
+	Preprocessed query to 100-document corpus in: 2.047865994s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+	Answered query to 100-document corpus in: 226.311µs
+	Upload: 0.00 MB
+	Download: 0.04 MB
+	Preprocessed query to 100-document corpus in: 2.053064282s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+	Answered query to 100-document corpus in: 220.112µs
+	Upload: 0.00 MB
+	Download: 0.04 MB
+	Preprocessed query to 100-document corpus in: 1.965474458s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+	Answered query to 100-document corpus in: 174.581µs
+	Upload: 0.00 MB
+	Download: 0.04 MB
+	Preprocessed query to 100-document corpus in: 2.091356114s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+	Answered query to 100-document corpus in: 174.851µs
+	Upload: 0.00 MB
+	Download: 0.04 MB
+	Preprocessed query to 100-document corpus in: 2.077990369s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+	Answered query to 100-document corpus in: 200.582µs
+	Upload: 0.00 MB
+	Download: 0.04 MB
+	Preprocessed query to 100-document corpus in: 2.040899685s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+	Answered query to 100-document corpus in: 382.553µs
+	Upload: 0.00 MB
+	Download: 0.04 MB
+	Preprocessed query to 100-document corpus in: 2.029091161s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+	Answered query to 100-document corpus in: 200.681µs
+	Upload: 0.00 MB
+	Download: 0.04 MB
+	Preprocessed query to 100-document corpus in: 2.064552533s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+	Answered query to 100-document corpus in: 645.655µs
+	Upload: 0.00 MB
+	Download: 0.04 MB
+	Preprocessed query to 100-document corpus in: 2.086481979s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+	Answered query to 100-document corpus in: 196.272µs
+	Upload: 0.00 MB
+	Download: 0.04 MB
+	Preprocessed query to 100-document corpus in: 2.072237088s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+	Answered query to 100-document corpus in: 201.021µs
+	Upload: 0.00 MB
+	Download: 0.04 MB
+	Preprocessed query to 100-document corpus in: 2.099846484s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+	Answered query to 100-document corpus in: 238.022µs
+	Upload: 0.00 MB
+	Download: 0.04 MB
+	Preprocessed query to 100-document corpus in: 2.073521767s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+	Answered query to 100-document corpus in: 212.901µs
+	Upload: 0.00 MB
+	Download: 0.04 MB
+	Preprocessed query to 100-document corpus in: 2.120933514s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+	Answered query to 100-document corpus in: 206.712µs
+	Upload: 0.00 MB
+	Download: 0.04 MB
+	Preprocessed query to 100-document corpus in: 2.091148792s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+	Answered query to 100-document corpus in: 212.221µs
+	Upload: 0.00 MB
+	Download: 0.04 MB
+	Preprocessed query to 100-document corpus in: 2.073340315s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+	Answered query to 100-document corpus in: 174.762µs
+	Upload: 0.00 MB
+	Download: 0.04 MB
+	Preprocessed query to 100-document corpus in: 2.0289059s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+	Answered query to 100-document corpus in: 169.441µs
+	Upload: 0.00 MB
+	Download: 0.04 MB
+	Preprocessed query to 100-document corpus in: 2.04443279s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+	Answered query to 100-document corpus in: 221.271µs
+	Upload: 0.00 MB
+	Download: 0.04 MB
+Dumping server state to file
+	Embeddings client: M = 192; L = 100; p = 131072; n = 2048
+		Embeddings hint: 1.76 MB
+		Embeddings map: 0.00 MB
+	Total metadata: 1.76 MB
+	Preprocessed query to 100-document corpus in: 2.028927889s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+	Answered query to 100-document corpus in: 209.421µs
+	Upload: 0.00 MB
+	Download: 0.04 MB
+	Preprocessed query to 100-document corpus in: 2.104973111s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+	Answered query to 100-document corpus in: 217.831µs
+	Upload: 0.00 MB
+	Download: 0.04 MB
+	Preprocessed query to 100-document corpus in: 2.039926318s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+	Answered query to 100-document corpus in: 219.472µs
+	Upload: 0.00 MB
+	Download: 0.04 MB
+	Preprocessed query to 100-document corpus in: 2.019312872s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+	Answered query to 100-document corpus in: 901.506µs
+	Upload: 0.00 MB
+	Download: 0.04 MB
+	Preprocessed query to 100-document corpus in: 2.065328179s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+	Answered query to 100-document corpus in: 166.211µs
+	Upload: 0.00 MB
+	Download: 0.04 MB
+	Preprocessed query to 100-document corpus in: 2.041897092s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+	Answered query to 100-document corpus in: 319.733µs
+	Upload: 0.00 MB
+	Download: 0.04 MB
+	Preprocessed query to 100-document corpus in: 2.063130973s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+	Answered query to 100-document corpus in: 216.182µs
+	Upload: 0.00 MB
+	Download: 0.04 MB
+	Preprocessed query to 100-document corpus in: 2.129264173s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+	Answered query to 100-document corpus in: 212.422µs
+	Upload: 0.00 MB
+	Download: 0.04 MB
+	Preprocessed query to 100-document corpus in: 2.016129239s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+	Answered query to 100-document corpus in: 174.662µs
+	Upload: 0.00 MB
+	Download: 0.04 MB
+	Preprocessed query to 100-document corpus in: 2.007424527s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+	Answered query to 100-document corpus in: 207.301µs
+	Upload: 0.00 MB
+	Download: 0.04 MB
+	Preprocessed query to 100-document corpus in: 2.120767924s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+	Answered query to 100-document corpus in: 173.341µs
+	Upload: 0.00 MB
+	Download: 0.04 MB
+	Preprocessed query to 100-document corpus in: 2.111987991s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+	Answered query to 100-document corpus in: 178.122µs
+	Upload: 0.00 MB
+	Download: 0.04 MB
+	Preprocessed query to 100-document corpus in: 2.059243055s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+	Answered query to 100-document corpus in: 209.312µs
+	Upload: 0.00 MB
+	Download: 0.04 MB
+	Preprocessed query to 100-document corpus in: 2.009922085s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+	Answered query to 100-document corpus in: 279.392µs
+	Upload: 0.00 MB
+	Download: 0.04 MB
+	Preprocessed query to 100-document corpus in: 2.124671161s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+	Answered query to 100-document corpus in: 221.642µs
+	Upload: 0.00 MB
+	Download: 0.04 MB
+	Preprocessed query to 100-document corpus in: 2.037229049s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+	Answered query to 100-document corpus in: 271.622µs
+	Upload: 0.00 MB
+	Download: 0.04 MB
+	Preprocessed query to 100-document corpus in: 2.065140417s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+	Answered query to 100-document corpus in: 211.081µs
+	Upload: 0.00 MB
+	Download: 0.04 MB
+	Preprocessed query to 100-document corpus in: 2.068520621s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+	Answered query to 100-document corpus in: 384.853µs
+	Upload: 0.00 MB
+	Download: 0.04 MB
+	Preprocessed query to 100-document corpus in: 2.098317573s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+	Answered query to 100-document corpus in: 218.902µs
+	Upload: 0.00 MB
+	Download: 0.04 MB
+	Preprocessed query to 100-document corpus in: 2.041030466s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+	Answered query to 100-document corpus in: 170.311µs
+	Upload: 0.00 MB
+	Download: 0.04 MB
+	Embeddings client: M = 192; L = 100; p = 131072; n = 2048
+		Embeddings hint: 1.76 MB
+		Embeddings map: 0.00 MB
+	Total metadata: 1.76 MB
+	Preprocessed query to 100-document corpus in: 2.062901981s
+	Upload: 32.38 MB
+	Download: 0.25 MB
+Err: rpc: can't find method Server.GetEmbeddingsAnswer
+--- FAIL: TestEmbeddingsFakeData (235.98s)
+panic: Call failed [recovered]
+	panic: Call failed
+
+goroutine 20 [running]:
+testing.tRunner.func1.2({0x89f9c0, 0x9c9270})
+	/usr/lib/go-1.22/src/testing/testing.go:1631 +0x24a
+testing.tRunner.func1()
+	/usr/lib/go-1.22/src/testing/testing.go:1634 +0x377
+panic({0x89f9c0?, 0x9c9270?})
+	/usr/lib/go-1.22/src/runtime/panic.go:770 +0x132
+github.com/ahenzinger/tiptoe/search/utils.CallTCP(0xc0003807e0, {0xc0000a25e0, 0x1a}, {0x8bad00, 0xc00005e428}, {0x899d40, 0xc00005e5f0})
+	/root/CS-239-Cryptography-Project/search/utils/rpc.go:114 +0x118
+github.com/ahenzinger/tiptoe/search/protocol.makeRPC[...](0xc00005e428, 0xc00005e5f0, 0x0, 0x0?, {0xc000014380?, 0x0?}, {0x9280dd?, 0x13}, 0x0)
+	/root/CS-239-Cryptography-Project/search/protocol/client.go:422 +0x133
+github.com/ahenzinger/tiptoe/search/protocol.(*Client).getEmbeddingsAnswer(0xc00021de78, 0xc00005e428, 0x0, {0xc000014380, 0xe})
+	/root/CS-239-Cryptography-Project/search/protocol/client.go:463 +0x85
+github.com/ahenzinger/tiptoe/search/protocol.testRecoverClusterNetworked({0xc000014380, 0xe}, 0x0, 0xc00012a070)
+	/root/CS-239-Cryptography-Project/search/protocol/embeddings_test.go:161 +0x1ab
+github.com/ahenzinger/tiptoe/search/protocol.TestEmbeddingsFakeData(0xc000134340?)
+	/root/CS-239-Cryptography-Project/search/protocol/embeddings_test.go:208 +0x145
+testing.tRunner(0xc000134340, 0x95a788)
+	/usr/lib/go-1.22/src/testing/testing.go:1689 +0xfb
+created by testing.(*T).Run in goroutine 1
+	/usr/lib/go-1.22/src/testing/testing.go:1742 +0x390
+exit status 2
+FAIL	github.com/ahenzinger/tiptoe/search/protocol	236.127s
