@@ -63,6 +63,10 @@ func (s *Server[T]) GetDB() *Database[T] {
 	return s.db
 }
 
+func (s *Server[T]) GetBetas() []int32 {
+	return s.db.Betas
+}
+
 func (s *Server[T]) Answer(query *Query[T]) *Answer[T] {
 	// return both D*q and |D|^2 = D^T*D
 	return &Answer[T]{matrix.MulVecPacked(s.db.Data, query.Query)}

@@ -60,11 +60,11 @@ func (s *Server) preprocessEmbeddingsSeeded(c *corpus.Corpus,
 	s.hint.EmbeddingsIndexMap = indexMap
 
 	// THIS CHECK DOES NOT MAKE SENSE FOR IMAGE DATASET, BECAUSE VECTORS ARE NORMALIZED
-	max_inner_prod := 2 * (1 << (2*c.GetSlotBits() - 2)) * c.GetEmbeddingSlots()
-	if (!conf.IMAGE_SEARCH()) && (s.embeddingsServer.Params().P < max_inner_prod) {
-		fmt.Printf("%d < %d\n", s.embeddingsServer.Params().P, max_inner_prod)
-		panic("Parameters not supported. Inner products may wrap around.")
-	}
+	// max_inner_prod := 2 * (1 << (2*c.GetSlotBits() - 2)) * c.GetEmbeddingSlots()
+	// if (!conf.IMAGE_SEARCH()) && (s.embeddingsServer.Params().P < max_inner_prod) {
+	// 	fmt.Printf("%d < %d\n", s.embeddingsServer.Params().P, max_inner_prod)
+	// 	panic("Parameters not supported. Inner products may wrap around.")
+	// }
 
 	fmt.Println("    done")
 }
@@ -116,13 +116,24 @@ func Transpose(m *matrix.Matrix[matrix.Elem64]) *matrix.Matrix[matrix.Elem64] {
 }
 
 func (s *Server) GetEmbeddingsAnswer(query *pir.Query[matrix.Elem64],
-	ans *pir.Answer[matrix.Elem64], ans2 *pir.Answer[matrix.Elem64]) error {
+	ans *pir.Answer[matrix.Elem64],
+	//  ans2 *pir.Answer[matrix.Elem64]
+) error {
 	*ans = *s.embeddingsServer.Answer(query)
+	fmt.Printf("length is %d by %d (%d)\n",
+		(*ans).Answer.Rows(),
+		(*ans).Answer.Cols(),
+		len((*ans).Answer.Data()),
+	)
+	betas := s.embeddingsServer.GetBetas()
+	if len(betas) > 0 {
+		(*ans).Answer.AddVectorData(betas)
+	}
 	// this is not going to work yet because SimplePIR does not expose db
-	db := s.embeddingsServer.GetDB()
-	dbMatrix := db.Data
+	// db := s.embeddingsServer.GetDB()
+	// dbMatrix := db.Data
 
-	*ans2 = pir.Answer[matrix.Elem64]{Answer: matrix.Mul(Transpose(dbMatrix), dbMatrix)}
+	// *ans2 = pir.Answer[matrix.Elem64]{Answer: matrix.Mul(Transpose(dbMatrix), dbMatrix)}
 	return nil
 }
 

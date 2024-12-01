@@ -148,7 +148,7 @@ func (c *Client) runRound(p Perf, in io.WriteCloser, out io.ReadCloser,
 
 	var query struct {
 		Cluster_index uint64
-		Emb           []int8
+		Emb           []int32
 	}
 
 	io.WriteString(in, text+"\n")                               // send query to embedding process
@@ -321,7 +321,7 @@ func (c *Client) ProcessHintApply(ans *UnderhoodAnswer) {
 	}
 }
 
-func (c *Client) QueryEmbeddings(emb []int8, clusterIndex uint64) *pir.Query[matrix.Elem64] {
+func (c *Client) QueryEmbeddings(emb []int32, clusterIndex uint64) *pir.Query[matrix.Elem64] {
 	if c.params.NumDocs == 0 {
 		panic("Not set up")
 	}

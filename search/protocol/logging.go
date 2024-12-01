@@ -97,10 +97,11 @@ func logStatsHyperbolic[T matrix.Elem](numDocs uint64,
 	start time.Time,
 	up *pir.Query[T],
 	down *pir.Answer[T],
-	down2 *pir.Answer[T]) (float64, float64, float64) {
+	//down2 *pir.Answer[T]
+) (float64, float64, float64) {
 	elapsed := time.Since(start)
 	upSz := utils.MessageSizeMB(*up)
-	downSz := utils.MessageSizeMB(*down) + utils.MessageSizeMB(*down2)
+	downSz := utils.MessageSizeMB(*down) //+ utils.MessageSizeMB(*down2)
 
 	fmt.Printf("\tAnswered query to %d-document corpus in: %s\n", numDocs, elapsed)
 	fmt.Printf("\tUpload: %.2f MB\n", upSz)
@@ -109,7 +110,7 @@ func logStatsHyperbolic[T matrix.Elem](numDocs uint64,
 	return elapsed.Seconds(), upSz, downSz
 }
 
-func checkAnswer(got, index, p uint64, emb []int8, corp *corpus.Corpus) {
+func checkAnswer(got, index, p uint64, emb []int32, corp *corpus.Corpus) {
 	docEmb := corp.GetEmbedding(index)
 	shouldBe := embeddings.InnerProduct(docEmb, emb)
 	res := embeddings.SmoothResult(got, p)
@@ -121,7 +122,7 @@ func checkAnswer(got, index, p uint64, emb []int8, corp *corpus.Corpus) {
 	}
 }
 
-func checkAnswers(got []uint64, cluster uint, p uint64, emb []int8, corp *corpus.Corpus) {
+func checkAnswers(got []uint64, cluster uint, p uint64, emb []int32, corp *corpus.Corpus) {
 	clusterSz := corp.NumDocsInCluster(cluster)
 	index := uint64(corp.ClusterToIndex(cluster))
 

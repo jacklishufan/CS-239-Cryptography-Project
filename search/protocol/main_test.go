@@ -11,6 +11,7 @@ import (
 
 var medcorpus = flag.String("medcorpus", "../corpus/medcorpus.csv", "Synthetic test corpus")
 var preamble = flag.String("preamble", "/home/ubuntu", "Preamble where the real corpus is stored")
+var is_hyperbolic = flag.Bool("hyperbolic", false, "Enable verbose output")
 
 var k *Coordinator
 var s *Server

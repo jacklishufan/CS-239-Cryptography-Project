@@ -80,9 +80,8 @@ func testRecoverSingle(s *Server, corp *corpus.Corpus) {
 
 		start := time.Now()
 		var ans pir.Answer[matrix.Elem64]
-		var ans2 pir.Answer[matrix.Elem64]
-		s.GetEmbeddingsAnswer(query, &ans, &ans2)
-		logStatsHyperbolic(c.NumDocs(), start, query, &ans, &ans2)
+		s.GetEmbeddingsAnswer(query, &ans)
+		logStatsHyperbolic(c.NumDocs(), start, query, &ans)
 
 		dec := c.ReconstructEmbeddings(&ans, i)
 
@@ -118,9 +117,8 @@ func testRecoverCluster(s *Server, corp *corpus.Corpus) {
 
 		start := time.Now()
 		var ans pir.Answer[matrix.Elem64]
-		var ans2 pir.Answer[matrix.Elem64]
-		s.GetEmbeddingsAnswer(query, &ans, &ans2)
-		logStatsHyperbolic(c.NumDocs(), start, query, &ans, &ans2)
+		s.GetEmbeddingsAnswer(query, &ans)
+		logStatsHyperbolic(c.NumDocs(), start, query, &ans)
 
 		dec := c.ReconstructEmbeddingsWithinCluster(&ans, i)
 		checkAnswers(dec, uint(i), p, emb, corp)
@@ -196,7 +194,7 @@ func testEmbeddingsServerDumpState(s *Server, corp *corpus.Corpus) {
 }
 
 func TestEmbeddingsFakeData(t *testing.T) {
-	corp := corpus.ReadEmbeddingsCsv(*medcorpus)
+	corp := corpus.ReadEmbeddingsCsv(*medcorpus, *is_hyperbolic)
 	s.PreprocessEmbeddingsFromCorpus(corp, 25 /* hint size in MB */, conf)
 	k.Setup(1, 0, []string{serverTcp}, false, conf)
 
